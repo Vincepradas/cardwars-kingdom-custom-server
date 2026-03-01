@@ -26,3 +26,23 @@ By default, Gunicorn will run on port 8000, however you can specify a different 
 ## Additional Setup
 
 It is recommended to set up Chat and PUN servers with [Photon](https://www.photonengine.com/) if you want to play PVP and use chat exclusively with users of your server.
+
+## Azure Admin Account Settings
+
+If you deploy to Azure App Service, configure admin credentials from:
+`Web App -> Settings -> Environment variables -> App settings`.
+
+Supported keys:
+
+- `ADMIN_USERNAME`: Admin username to create or target (default: `admin`)
+- `ADMIN_PASSWORD`: Password used to create a new admin or reset an existing one
+- `ADMIN_RANK`: Admin rank integer (default: `0`)
+- `ADMIN_PASSWORD_RESET`: Set to `true` to force-reset password for `ADMIN_USERNAME`
+
+Behavior:
+
+- If `ADMIN_PASSWORD` is set and `ADMIN_USERNAME` does not exist, the account is created automatically.
+- If `ADMIN_PASSWORD_RESET=true`, the password for `ADMIN_USERNAME` is reset at startup.
+- If no admins exist and no environment password is set, a random admin password is generated and logged to console.
+
+For safety, after doing a password reset, set `ADMIN_PASSWORD_RESET` back to `false` and restart the app.
