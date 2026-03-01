@@ -1,0 +1,604 @@
+{
+  "PlayerName": "10b6f2a5-58e7-4707-94f9-626a65a76f14",
+  "MultiplayerPlayerName": "bins",
+  "HasAuthenticated": 1,
+  "AddedStones": "15D0",
+  "ReadWriteParam": 1981,
+  "SelectedLoadout": 0,
+  "MyHelperCreatureID": 1,
+  "SoftCurrency": 10,
+  "CustomizationCurrency": 10,
+  "PaidHardCurrency": 10,
+  "FreeHardCurrency": 2500,
+  "PvpCurrency": 10,
+  "RankXP": 20000,
+  "StaminaTime": 0,
+  "PvpStaminaTime": 0,
+  "ExtraQuestStamina": 0,
+  "ExtraPvpStamina": 0,
+  "InventorySpace": 25,
+  "AllyBoxSpace": 30,
+  "TopCompletedQuestId": 2,
+  "TopShownCompletedQuestId": 2,
+  "PvpBattles": 0,
+  "FriendInvites": 0,
+  "QuestSelectScrollPos": 2,
+  "LastAccessUTC": 1772345133,
+  "InstalledDate": 1772344832,
+  "RandomDungeonLevel": 1,
+  "SecurityKeyValue": "175D",
+  "LastKnownLocation": "US",
+  "PlayersLastSavedLevel": 5,
+  "MultiplayerLevel": -1,
+  "InviteGroup": 0,
+  "BestMultiplayerLevel": -1,
+  "PointsInMultiplayerLevel": 0,
+  "MultiplayerWinStreak": 0,
+  "PvpRankRewardsGranted": -1,
+  "PvpPlayed": 0,
+  "PvpMatchStarted": 0,
+  "Zxcvbnm": 0,
+  "TownTiltCam": 1,
+  "EveryPlayEnabled": 0,
+  "InviteCodeRedeemed": 0,
+  "CDExpeditionSlots": 2,
+  "DateOfBirth": 2398406399,
+  "ConfirmedTOSVersion": 1,
+  "SaleShowCooldown": 0,
+  "SaleEndTime": 0,
+  "SaleRestartCooldown": 0,
+  "UIDFixApplied": 1,
+  "selectedLang": "N",
+  "RankUpInventoryGiven": "True",
+  "ExpeditionRefreshTime": 1772384612,
+  "SelectedPortrait": "Default",
+  "SelectedCardBack": "Default",
+  "TitleDisplayTime": 5444,
+  "Unlocks": [
+    "TBuilding_Quests",
+    "Lab_Fusion",
+    "TBuilding_EditDeck",
+    "TBuilding_Gacha",
+    "TBuilding_Store"
+  ],
+  "Leaders": [
+    {
+      "ID": "Leader_Jake",
+      "Skin": "Leader_Jake",
+      "OwnedSkins": []
+    }
+  ],
+  "Inventory": [
+    {
+      "_T": "CR",
+      "ID": "HuskerKnight_Base",
+      "UniqueID": 13,
+      "Xp": 0,
+      "Favorite": 0,
+      "Passive": 1,
+      "PassiveFeeds": 0,
+      "StarRating": 1
+    },
+    {
+      "_T": "CR",
+      "ID": "CornBall_Base",
+      "UniqueID": 1,
+      "Xp": 0,
+      "Favorite": 0,
+      "Passive": 1,
+      "PassiveFeeds": 0,
+      "StarRating": 1
+    },
+    {
+      "_T": "XP",
+      "ID": "CAKE_T1_Corn"
+    },
+    {
+      "_T": "CR",
+      "ID": "BogFrogBomb_Base",
+      "UniqueID": 14,
+      "Xp": 0,
+      "Favorite": 0,
+      "Passive": 1,
+      "PassiveFeeds": 0,
+      "StarRating": 1
+    }
+  ],
+  "Mails": [
+    {
+      "ID": "DAILY_07",
+      "UniqueID": 1,
+      "MailTitle": "Strange Sunday!",
+      "MailBody": "It's Strange Sunday! Go get your ingredients in the Dungeons!",
+      "HardQuantity": 0,
+      "SoftQuantity": 0,
+      "PVPQuantity": 25,
+      "Repeatable": "Sunday",
+      "ShowDate": "01/01/0001 00:00:00",
+      "EndDate": "01/01/0001 00:00:00",
+      "MailType": "Scheduled",
+      "Opened": 0,
+      "Rewarded": 0
+    }
+  ],
+  "Collection": [
+    {
+      "ID": "BogFrogBomb_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "CoolDog_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "CornBall_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "CornDog_Base",
+      "Stat": 1
+    },
+    {
+      "ID": "CornEyeBat_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "CornWall_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "CottonEyeBat_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "HeartAngel_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "HuskerGiant_Base",
+      "Stat": 1
+    },
+    {
+      "ID": "HuskerKnight_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "ManowarElf_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "Pig_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "SnakeMint_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "SoftEyeling_Base",
+      "Stat": 1
+    },
+    {
+      "ID": "WizardElf_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "CornWorm_Base",
+      "Stat": 3
+    },
+    {
+      "ID": "CottonCutie_Base",
+      "Stat": 3
+    }
+  ],
+  "CardCollection": [
+    {
+      "ID": "CORN_0001",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0002",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0003",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0004",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0006",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0024",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0025",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0026",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0031",
+      "Stat": 1
+    },
+    {
+      "ID": "CORN_0032",
+      "Stat": 1
+    },
+    {
+      "ID": "PLAINS_0004",
+      "Stat": 1
+    },
+    {
+      "ID": "NICE_0001",
+      "Stat": 1
+    },
+    {
+      "ID": "Leader_Jake_02",
+      "Stat": 1
+    },
+    {
+      "ID": "TUT_0001",
+      "Stat": 1
+    },
+    {
+      "ID": "TUT_PLAINS_0001",
+      "Stat": 1
+    },
+    {
+      "ID": "TUT_PLAINS_0002",
+      "Stat": 1
+    }
+  ],
+  "EvoMatCollection": [],
+  "XPMatCollection": [
+    {
+      "ID": "CAKE_T1_Corn",
+      "Stat": 3
+    }
+  ],
+  "Loadouts": [
+    {
+      "LeaderID": "Leader_Jake",
+      "CreatureID0": 1,
+      "CreatureID1": 2,
+      "CreatureID2": 3,
+      "CreatureID3": 4,
+      "CreatureID4": 13
+    },
+    {
+      "LeaderID": "Leader_Jake",
+      "CreatureID0": 5,
+      "CreatureID1": 6,
+      "CreatureID2": 7,
+      "CreatureID3": 8
+    },
+    {
+      "LeaderID": "Leader_Jake",
+      "CreatureID0": 9,
+      "CreatureID1": 10,
+      "CreatureID2": 11,
+      "CreatureID3": 12
+    },
+    {
+      "LeaderID": "Leader_Jake"
+    },
+    {
+      "LeaderID": "Leader_Jake"
+    }
+  ],
+  "TutorialsDone": [
+    "IntroBattle",
+    "Q1",
+    "UseEditDeck",
+    "Q2",
+    "UseGacha",
+    "EquipGacha",
+    "Bank"
+  ],
+  "CreatureSort": [
+    {
+      "Sort": 0,
+      "Rv": 0
+    }
+  ],
+  "ExCardSort": [
+    {
+      "Sort": 0,
+      "Rv": 0
+    }
+  ],
+  "HelperSort": [
+    {
+      "Sort": 2,
+      "Rv": 0
+    }
+  ],
+  "FBInviteRewards": [],
+  "DeletedMail": [],
+  "SpecialQuests": {},
+  "MissionProgress": {
+    "GlobalProgress": {
+      "BattlesWon": 3,
+      "PvPBattlesWon": 0,
+      "LeagueBattlesWon": 3,
+      "HighestLeagueBattlesWon": 3,
+      "DungeonBattlesWon": 0,
+      "Criticals": 12,
+      "CreaturesKilled": 8,
+      "CardsPlayed": 16,
+      "SuperCardsPlayed": 1,
+      "CreaturesLost": 6,
+      "StatusEffectsInflicted": 0,
+      "BuffsGranted": 14,
+      "EffectsStacked": 1,
+      "Attacks": 18,
+      "DragAttacks": 14,
+      "CardAttacks": 4,
+      "MagicAttacks": 4,
+      "DeployedCreatures": 9,
+      "EnergyUsed": 77,
+      "HealCardsPlayed": 0,
+      "FactionKills": [
+        0,
+        5,
+        0,
+        2,
+        1,
+        0
+      ],
+      "FactionCards": [
+        1,
+        13,
+        0,
+        2,
+        0,
+        0
+      ],
+      "DeployedFaction": [
+        0,
+        8,
+        0,
+        1,
+        0,
+        0
+      ],
+      "CreaturesFused": 0,
+      "CardsCreated": 0,
+      "CreaturesSold": 0,
+      "CardsSold": 0,
+      "RunesSold": 0,
+      "CoinsCollected": 55,
+      "CoinsSpent": 0,
+      "TeethCollected": 0,
+      "TeethSpent": 0,
+      "StaminaUsed": 2,
+      "CreaturesCollected": 0,
+      "RunesCollected": 0,
+      "XPMaterialsCollected": 1,
+      "DailiesCompleted": 0,
+      "FactionFused": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "StarsEarned": 4
+    },
+    "DailyProgress": {
+      "BattlesWon": 2,
+      "PvPBattlesWon": 0,
+      "LeagueBattlesWon": 2,
+      "HighestLeagueBattlesWon": 2,
+      "DungeonBattlesWon": 0,
+      "Criticals": 8,
+      "CreaturesKilled": 5,
+      "CardsPlayed": 14,
+      "SuperCardsPlayed": 1,
+      "CreaturesLost": 4,
+      "StatusEffectsInflicted": 0,
+      "BuffsGranted": 14,
+      "EffectsStacked": 1,
+      "Attacks": 11,
+      "DragAttacks": 11,
+      "CardAttacks": 0,
+      "MagicAttacks": 0,
+      "DeployedCreatures": 6,
+      "EnergyUsed": 61,
+      "HealCardsPlayed": 0,
+      "FactionKills": [
+        0,
+        4,
+        0,
+        1,
+        0,
+        0
+      ],
+      "FactionCards": [
+        1,
+        13,
+        0,
+        0,
+        0,
+        0
+      ],
+      "DeployedFaction": [
+        0,
+        6,
+        0,
+        0,
+        0,
+        0
+      ],
+      "CreaturesFused": 0,
+      "CardsCreated": 0,
+      "CreaturesSold": 0,
+      "CardsSold": 0,
+      "RunesSold": 0,
+      "CoinsCollected": 55,
+      "CoinsSpent": 0,
+      "TeethCollected": 0,
+      "TeethSpent": 0,
+      "StaminaUsed": 2,
+      "CreaturesCollected": 0,
+      "RunesCollected": 0,
+      "XPMaterialsCollected": 1,
+      "DailiesCompleted": 0,
+      "FactionFused": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "StarsEarned": 0
+    },
+    "GlobalMissions": [
+      {
+        "MissionID": "GLB_10_KillCreatures",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_10_LoseCreatures",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_5_WinAny",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_25_PlayFactionCards1",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_25_GetCriticals",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_10_EarnStars",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_50_PlayCards",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_25_PlayFactionCards3",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_25_CollectXPMaterials",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_25_PlayFactionCards2",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_25_PlayFactionCards5",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_25_PlayFactionCards4",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_1_WinPvP",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "GLB_10_GetCriticals",
+        "Completed": 1,
+        "Claimed": 1
+      }
+    ],
+    "DailyMissions": [
+      {
+        "MissionID": "DLY_3_WinAny",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "DLY_25_DoDragAttacks",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "DLY_5_CollectXPMaterials3",
+        "Completed": 0,
+        "Claimed": 0
+      },
+      {
+        "MissionID": "All_Dailies_1",
+        "Completed": 0,
+        "Claimed": 0
+      }
+    ]
+  },
+  "QuestStars": [
+    0,
+    3,
+    1
+  ],
+  "DungeonStars": {},
+  "CardBacks": [
+    "Default"
+  ],
+  "Portraits": [],
+  "Titles": [],
+  "Badges": [],
+  "CDExpeditions": [
+    {
+      "Difficulty": 2,
+      "Name": "7",
+      "Duration": 3600,
+      "Class": 1,
+      "CreatureCount": 2
+    },
+    {
+      "Difficulty": 2,
+      "Name": "8",
+      "Duration": 3600,
+      "Class": 1,
+      "CreatureCount": 3
+    }
+  ],
+  "SpeedUps": [],
+  "DungeonMaps": {},
+  "BattleHistory": [],
+  "IgnoredPlayers": [],
+  "Sales": [],
+  "GachaCooldowns": [
+    {
+      "ID": "Daily",
+      "Time": 1772457592
+    }
+  ],
+  "GachaKeys": [],
+  "MapClickInterval": 6527,
+  "ActiveCalendar": "A",
+  "DailyMissionTimestamp": "03/01/2026 14:03:32"
+}
