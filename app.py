@@ -1097,10 +1097,20 @@ def IsDevModeUser(username):
 @app.route("/persist/game", methods=['GET', 'PUT'])
 def PersistGame():
  
-	if request.headers.get("Player-Id") is None:
-		DiscordWebhookMessage("User attempted to access game without Player-Id header. IP: " + IPFromRequest(request))
-		abort(404)
+	# Prefer header, but support legacy/revived clients that pass player_id in query/body.
 	username = request.headers.get("Player-Id")
+	if username is None or username == "":
+		username = request.args.get("player_id")
+	if (username is None or username == "") and request.method == 'PUT':
+		try:
+			clientData = parse_qs(request.get_data().decode('utf-8'))
+			clientData = {k: v[0] if len(v) == 1 else v for k, v in clientData.items()}
+			username = clientData.get("player_id")
+		except Exception:
+			username = None
+	if username is None or username == "":
+		DiscordWebhookMessage("User attempted to access game without Player-Id header. IP: " + IPFromRequest(request))
+		return make_response("Missing Player-Id", 400)
  
 	#verify headers (kept permissive for iOS/revived clients that don't send legacy values)
 	if request.headers.get("Age") is None:
