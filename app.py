@@ -538,13 +538,13 @@ def AdminPlayerAction(player, action):
 
 	Log("admin", current_user.username + " performed " + action + " on " + player)
 		
-	# if action == "ban":
-	# 	#check if player id is in banlist, if not, add it
-	# 	if not IsUserBanned(player):
-	# 		newban = Bans(username=player, bantype="userid", author=current_user.username, time=int(time.time()))
-	# 		db.session.add(newban)
-	# 		db.session.commit()
-	if action == "unban":
+	if action == "ban":
+		#check if player id is in banlist, if not, add it
+		if not IsUserBanned(player):
+			newban = Bans(username=player, bantype="userid", author=current_user.username, time=int(time.time()))
+			db.session.add(newban)
+			db.session.commit()
+	elif action == "unban":
 		#check if player id is in banlist, if yes, remove it
 		if IsUserBanned(player):
 			player_check = Bans.query.filter_by(username=player).first()
@@ -938,6 +938,9 @@ def AccountPreAuth():
 def AccountGCAuth():
 	clientData = parse_qs(request.get_data().decode('utf-8'))
 	clientData = {k: v[0] if len(v) == 1 else v for k, v in clientData.items()}
+
+	if "player_id" not in clientData or clientData["player_id"] == "":
+		return make_response("Missing player_id!", 400)
  
 	if InvalidUsername(clientData["player_id"]):
 		return make_response("Invalid Username!", 400)
@@ -1150,6 +1153,12 @@ def PersistGame():
 	#Device name check (disable for DEV_MODE users)
 	if request.method == 'PUT' and not IsDevModeUser(username):
 		DeviceNameUser = Player.query.filter_by(username=username).first()
+		if DeviceNameUser is None:
+			# Be resilient to out-of-order client calls by creating a minimal player row.
+			DeviceNameUser = Player(username=username)
+			db.session.add(DeviceNameUser)
+			db.session.commit()
+			PlayerLog(IPFromRequest(request), username, "Created missing player during persist/game PUT")
 		devicename = request.headers.get("X-Nick-Description")
 		if devicename is None or devicename == "":
 			# Don't block clients that don't provide this legacy header
