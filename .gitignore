@@ -62,6 +62,7 @@ db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
+instance/
 .webassets-cache
 
 # Scrapy stuff:
@@ -156,4 +157,6 @@ data/persist/*
 !data/persist/blueprints/
 !data/persist/manifest.json
 backup/*
+version.txt
+flaskkey
 discordwebhookurl
