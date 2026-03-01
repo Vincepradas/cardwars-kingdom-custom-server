@@ -1102,23 +1102,16 @@ def PersistGame():
 		abort(404)
 	username = request.headers.get("Player-Id")
  
-	#verify headers
+	#verify headers (kept permissive for iOS/revived clients that don't send legacy values)
 	if request.headers.get("Age") is None:
-		DiscordWebhookMessage(username +" attempted to access game without Age header. IP: " + IPFromRequest(request))
-		abort(404)
-	if request.headers.get("User-Agent") != "Innertube Explorer v0.1":
-		DiscordWebhookMessage(username +" attempted to access game without User-Agent header. IP: " + IPFromRequest(request))
-		abort(404)
+		DiscordWebhookMessage(username +" accessed game without Age header. IP: " + IPFromRequest(request))
+	if request.headers.get("User-Agent") is None:
+		DiscordWebhookMessage(username +" accessed game without User-Agent header. IP: " + IPFromRequest(request))
 	if request.headers.get("Platform") is None:
-		DiscordWebhookMessage(username +" attempted to access game without Platform header. IP: " + IPFromRequest(request))
-		abort(404)
+		DiscordWebhookMessage(username +" accessed game without Platform header. IP: " + IPFromRequest(request))
 	if request.headers.get("Version") is None:
 		DiscordWebhookMessage(username +" attempted to access game without Version header. IP: " + IPFromRequest(request))
 		abort(404)
-	if request.method == 'PUT':
-		if request.headers.get("X-Nick-Description") is None:
-			DiscordWebhookMessage(username +" attempted to access game without X-Nick-Description header. IP: " + IPFromRequest(request))
-			abort(404)
   
 	if InvalidUsername(username):
 		return make_response("Invalid Username!", 400)
@@ -1128,7 +1121,10 @@ def PersistGame():
 	#Device name check (disable for DEV_MODE users)
 	if request.method == 'PUT' and not IsDevModeUser(username):
 		DeviceNameUser = Player.query.filter_by(username=username).first()
-		devicename = request.headers["X-Nick-Description"]
+		devicename = request.headers.get("X-Nick-Description")
+		if devicename is None or devicename == "":
+			# Don't block clients that don't provide this legacy header
+			devicename = "UNKNOWN-DEVICE"
 
 		#check if player's devicename is empty, if so, set it to X-Nick-Description
 		if DeviceNameUser.devicename is None or DeviceNameUser.devicename == b"":
