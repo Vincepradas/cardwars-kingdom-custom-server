@@ -1117,10 +1117,11 @@ def IsDevModeUser(username):
 	return DevModeUser.query.filter_by(username=username).first() is not None
 
 @app.route("/persist/game", methods=['GET', 'PUT'])
-def PersistGame():
+@app.route("/persist/<string:path_player_id>/game", methods=['GET', 'PUT'])
+def PersistGame(path_player_id=None):
  
 	# Prefer header, but support legacy/revived clients that pass player_id in query/body.
-	username = request.headers.get("Player-Id")
+	username = path_player_id if path_player_id else request.headers.get("Player-Id")
 	if username is None or username == "":
 		username = request.args.get("player_id")
 	if (username is None or username == "") and request.method == 'PUT':
