@@ -886,6 +886,25 @@ def Blueprints():
 			})
 	return jsonify(data)
 
+# iOS clients request individual blueprint files with a capitalized path, e.g.
+# /persist/static/Blueprints/db_TownSchedule.json
+@app.route("/persist/static/Blueprints/<path:filename>", methods=['GET'])
+def BlueprintFile(filename):
+	base_dir = os.path.abspath("data/persist/blueprints")
+	full_path = os.path.abspath(os.path.join(base_dir, filename))
+
+	# Prevent path traversal outside blueprints directory.
+	if not full_path.startswith(base_dir + os.sep) and full_path != base_dir:
+		return make_response("Not found", 404)
+
+	if not os.path.exists(full_path):
+		return make_response("Not found", 404)
+
+	rel_dir = os.path.dirname(os.path.relpath(full_path, base_dir))
+	if rel_dir == ".":
+		rel_dir = ""
+	return send_from_directory(directory=os.path.join(base_dir, rel_dir), path=os.path.basename(full_path))
+
 @app.route("/persist/messages_received_ids")
 def PersistMessagesReceivedIDs():
 	return send_from_directory(directory="", path="data/persist/messages_received_ids.json", as_attachment=True, download_name="messages_received_ids.json")
