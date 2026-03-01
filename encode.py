@@ -6,7 +6,7 @@ import os
 from io import BytesIO
 from pathlib import Path
 
-DEFAULT_USERNAME = "10b6f2a5-58e7-4707-94f9-626a65a76f14"
+DEFAULT_USERNAME = "ff8a932d-57af-43ec-872a-847fb6e15841"
 DEFAULT_JSON_FILE = Path("data.json")
 
 
